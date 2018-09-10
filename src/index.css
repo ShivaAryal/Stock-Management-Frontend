@@ -1,0 +1,109 @@
+@import '~antd/dist/antd.css';
+
+body {
+    margin: 0;
+    padding: 0;  
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    -webkit-font-smoothing: antialiased;
+  }
+  #dashboard {
+    min-height: 100vh;
+  }
+  #dashboard .trigger {
+    font-size: 18px;
+    line-height: 64px;
+    padding: 0 24px;
+    cursor: pointer;
+    transition: color .3s;
+  }
+  .ant-menu-submenu-popup.ant-menu-dark .ant-menu-item-selected, .ant-menu.ant-menu-dark .ant-menu-item-selected {
+    background-color: #6190e8;
+  }
+  
+  #dashboard .trigger:hover {
+    color: #6190e8;
+  }
+  
+  #dashboard .logo {
+    height: 32px;
+    background: rgba(255,255,255,.2);
+    margin: 16px;
+  }
+  
+  li.ant-menu-item {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+  }
+  .content-section {
+    margin: 24px 0;
+  }
+  /* .active-card, .active-card .ant-modal-content {
+    background: #6190e8;
+    color:white
+  }
+  .completed-card, .completed-card .ant-modal-content {
+    background: #4CAF;
+    color: WHITE;
+  }
+  .pending-card, .pending-card .ant-modal-content {
+    background: white;
+    color: #546E7A;
+  }
+  .pending-card .card-meta {
+    color: #78909C;
+  } */
+  /* .ant-modal-title {
+    color: white;
+  } */
+  
+  /* .pending-card .ant-modal-title {
+    color: #546E7A;
+  }
+  .card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 2px;
+  }
+  .card-meta {
+    font-weight: 600;
+    font-size: 12px;
+    color: #f5f4f4;
+  }
+  .card-details {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 13px;
+  }
+  .card-footer {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: -10;
+    text-transform: capitalize;
+  } */
+ 
+  .details-value {
+    /* color: #546E7A; */
+    color: white;
+    font-weight: bold;
+    margin-bottom: 13px;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+ 
+  /* .pending-card button.ant-modal-close {
+    color: #546E7A;
+  }
+  .pending-card .details-value {
+    color: #546E7A; 
+  } */
+  .top-search-box .ant-input {
+    border: 0;
+    min-height: 99%;
+    border-radius: 0;
+    border-bottom: 1px solid #e8e8e8;
+  }
+  .top-search-box .ant-input:focus {
+    box-shadow: none;
+  }
+
