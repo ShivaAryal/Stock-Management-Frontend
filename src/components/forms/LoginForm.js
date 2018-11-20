@@ -1,5 +1,5 @@
 import React from 'react';
-import {Form,Button} from "semantic-ui-react";
+import {Form,Button,Icon} from "semantic-ui-react";
 import Validator from 'validator';
 import InlineError from './../messages/InlineError';
 import PropTypes from 'prop-types';
@@ -36,10 +36,12 @@ class LoginForm extends React.Component{
     render(){
         const {errors} = this.state;
         return(
-            <Form onSubmit={this.onSubmit}>
-                <Form.Field error={!!errors.email} >
-                    <label htmlFor="email">Email</label>
+            <Form onSubmit={this.onSubmit} style={{width:500,height:300,display:'flex',flexDirection:'column',alignSelf:'centre',backgroundColor:'transparent',borderRadius:40}}>
+                <div style={{alignSelf:'center',margin:20}}>
+                <Form.Field error={!!errors.email} style={{display:'flex',flexDirection:'column'}}>
+                    <label htmlFor="email" style={{fontFamily:'Courier New',fontSize:20}}>Email</label>
                     <input
+                        style={{width:300,borderRadius:20}}
                         type="email"
                         id="email"
                         name="email"
@@ -49,9 +51,12 @@ class LoginForm extends React.Component{
                     />
                     {errors.email && <InlineError text={errors.email}/>}
                 </Form.Field>
-                <Form.Field error={!!errors.password} >
-                    <label htmlFor="password">Password</label>
+                </div>
+                <div style={{alignSelf:'center',marginBottom:20}}>
+                <Form.Field error={!!errors.password} style={{display:'flex',flexDirection:'column'}}>
+                    <label htmlFor="password" style={{fontFamily:'Courier New',fontSize:20}}>Password</label>
                     <input
+                        style={{width:300,borderRadius:20}}
                         type="password"
                         id="password"
                         name="password"
@@ -61,7 +66,15 @@ class LoginForm extends React.Component{
                     />
                     {errors.password && <InlineError text={errors.password}/>}
                 </Form.Field>
-                <Button primary>Login</Button>
+                </div>
+                <div style={{marginLeft:100}} >
+                <Button animated style={{backgroundColor:'#D7CCC8',borderRadius:15}}>
+                    <Button.Content visible style={{fontSize:17}}>Login</Button.Content>
+                    <Button.Content hidden>
+                    <Icon name='arrow right' />
+                    </Button.Content>
+                    </Button>
+                </div>
             </Form>
         )
     }

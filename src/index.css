@@ -1,4 +1,5 @@
 @import '~antd/dist/antd.css';
+@import '~react-bootstrap-table/dist/react-bootstrap-table-all.min.css';
 
 body {
     margin: 0;

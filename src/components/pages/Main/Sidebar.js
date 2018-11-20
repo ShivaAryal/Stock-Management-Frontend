@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import { Layout, Menu, Icon,message } from 'antd';
-import './../../../index.css'
+import './../../../index.css';
+
 const { Sider } = Layout;
+const SubMenu = Menu.SubMenu;
 
 class Sidebar extends Component {
   onPress=(key)=>{
@@ -24,21 +26,21 @@ class Sidebar extends Component {
                 <Icon type="home" />
                 <span>Home</span>
             </Menu.Item>
-            <Menu.Item key="2">
-                <Icon type="user" />
-                <span>Customer</span>
-            </Menu.Item>
-            <Menu.Item key="3">
-              <Icon type="meh-o" />
-              <span>Owner</span>
-            </Menu.Item>
-            <Menu.Item key="4">
+            <Menu.Item key="2" style={{backgroundColor:'#EEEEEE'}} >
               <Icon type="smile-o" />
-              <span>Profit</span>
+              <span>Transactioner</span>
             </Menu.Item>
-            <Menu.Item key="5">
-              <Icon type="frown-o" />
-              <span>Loss</span>
+            <Menu.Item key="3" style={{backgroundColor:'#EEEEEE'}} >
+                <Icon type="dollar" />
+                <span>Sales</span>
+            </Menu.Item>
+            <Menu.Item key="4" style={{backgroundColor:'#EEEEEE'}} >
+                <Icon type="stock" />
+                <span>Stock</span>
+            </Menu.Item>
+            <Menu.Item key="5" style={{backgroundColor:'#EEEEEE'}} >
+                <Icon type="pound" />
+                <span>Expense</span>
             </Menu.Item>
           </Menu>
         </Sider>

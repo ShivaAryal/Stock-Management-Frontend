@@ -15,7 +15,7 @@ class Navbar extends Component {
     return (
       <Layout.Header style={{ background: '#EEEEEE', padding: 0,display:'flex',flexDirection:'row',height:70 }}>
         <Icon
-          style={{color:'#000'}}
+          style={{color:'#000',alignSelf:'center'}}
           className="trigger"
           type={this.props.collapsed ? 'menu-unfold' : 'menu-fold'}
           onClick={this.props.toggle}

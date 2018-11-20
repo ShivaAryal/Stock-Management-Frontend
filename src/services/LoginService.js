@@ -6,7 +6,7 @@ export default class Auth{
     static login(email,password){ 
         console.log(email)
         return new Promise((resolve, reject) => {
-            fetch("http://192.168.1.107:4000/api/admin/login", {
+            fetch("http://192.168.10.107:4000/api/admin/login", {
                 method:'POST',
                 mode:'cors',
                 headers:{

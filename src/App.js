@@ -6,6 +6,7 @@ import {
 // import HomePage from "./components/pages/HomePage";
 import Main from './../src/components/pages/Main'
 import LoginPage from "./components/pages/LoginPage";
+
 import './index.css'
 
 const App = () => 
