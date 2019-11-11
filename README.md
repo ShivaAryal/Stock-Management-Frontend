@@ -1,1 +1,1 @@
-Stock Management Frontedn with react
+Stock Management Frontedn with reactjs
