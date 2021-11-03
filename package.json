@@ -20,7 +20,7 @@
     "react-table": "^6.8.6",
     "semantic-ui-css": "^2.3.3",
     "semantic-ui-react": "^0.82.1",
-    "validator": "^10.4.0"
+    "validator": "^13.7.0"
   },
   "scripts": {
     "start": "react-scripts start",
